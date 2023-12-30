@@ -1,0 +1,21 @@
+POST http://localhost:3000/todos
+Content-Type: application/json
+
+{
+    "description": "Something to do"
+}
+
+###
+GET http://localhost:3000/todos?limit=10&offset=0
+
+###
+GET http://localhost:3000/todos/1
+
+###
+PUT http://localhost:3000/todos/1
+Content-Type: application/json
+
+{
+    "description": "Something to do -1",
+    "completed": true
+}
